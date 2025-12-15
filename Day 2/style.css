@@ -1,0 +1,218 @@
+/* div {
+  background-color: red !important;
+} */
+
+/* 1- important
+    2- inline style
+    3- internal or external link */
+
+/* #div-id{
+  background-color: yellow;
+}
+
+
+.div-class{
+    background-color: green;
+} */
+
+/* 
+.my-element{
+    background-color: purple;
+}
+
+
+#my-element{
+    background-color: pink;
+}
+
+#my-element .insider{
+    background-color: orange;
+}
+#my-element .insider div{
+    background-color: blue;
+}
+
+
+#hamada{
+    background-color: blue;
+}
+
+
+#hamada #nested-hamada p{
+    background-color: red;
+}
+
+
+#hamada #nested-hamada p{
+    background-color: green;
+} */
+
+/* select all children and nested children */
+/* div p{
+    color: red;
+} */
+
+/* select direct children */
+/* div > p{
+    color: yellow;
+}
+
+
+.my-div ~p {
+    color: aqua;
+}
+
+.my-div +p{
+    color: green;
+} */
+
+/* (id , class , tag) */
+
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 50px;
+    margin: 50px;
+    box-sizing: border-box;
+} */
+
+/* block element
+    width + height + padding + margin
+*/
+/* div {
+  background-color: red;
+} */
+
+/* inline element
+    margin (right+ left) only + padding */
+/* span {
+  background-color: blue;
+} */
+
+/* inline-block element
+    initial width of its content
+    (width + height + padding + margin)
+*/
+/* img{
+    width: 200px;
+} */
+
+/* Pseudo-classes
+ */
+/* 
+a {
+  text-decoration: none;
+  color: black;
+  background: red;
+  padding: 4px 8px;
+  border: 2px solid;
+  border-radius: 6px;
+transition: 0.3s;
+}
+
+a:hover{
+    background-color: black;
+    color: red;
+}
+
+
+.text-input{
+    background-color: lightskyblue;
+    outline: none;
+    border: none;
+    padding: 4px 4px;
+}
+
+.text-input:focus{
+    border: 2px solid red;
+    caret-color: yellow;
+} */
+
+/* .element::before{
+    content: 'please say ';
+    color: red;
+} */
+
+/* .element::after{
+    content: ' please say ';
+    color: blue;
+}
+
+.element::first-letter{
+    color: green;
+    font-size: 24px;
+} */
+
+.static-position {
+  background-color: red;
+}
+
+.relative-position {
+  background-color: blue;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.absolute-position {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  position: absolute;
+  /* z-index: 1; */
+}
+
+.absolute2-position {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  /* position: absolute; */
+}
+
+.fixed-position {
+  background-color: aqua;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.content {
+  background-color: red;
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+.sticky-positon {
+  background-color: yellow;
+  position: sticky;
+  top: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-section {
+  height: 500px;
+background-image: url("/assets/spiderman.jpg");
+background-size: contain;
+background-size: cover;
+background-position: center;
+  /* margin-trim: all; */
+    padding-top:1px ;
+    /* overflow: hidden; */
+}
+
+.quote {
+  background-color: black;
+  color: white;
+  font-size: 36px;
+  width: 400px;
+  text-align: center;
+  margin: 200px auto;
+
+  
+}

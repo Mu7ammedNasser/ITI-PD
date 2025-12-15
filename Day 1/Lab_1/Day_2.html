@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <center>
+      <table width="60%" cellpadding="10" cellspacing="5" border="1">
+        <tr>
+          <th bgcolor="#ADD8E6">Name</th>
+          <th bgcolor="#ADD8E6">center</th>
+          <th bgcolor="#ADD8E6">Details</th>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+          <td><font color="blue">John</font></td>
+          <td><center>25</center></td>
+          <td align="left" rowspan="2">Merged Row</td>
+        </tr>
+        <tr>
+          <td align="center" bgcolor="#D3D3D3" colspan="2">merged columns</td>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+          <td><font color="green">Jane</font></td>
+          <td><center>30</center></td>
+          <td>
+            <center>
+              <table cellpadding="5" cellspacing="0" border="1">
+                <tr>
+                  <th bgcolor="yellow">Nested table</th>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td><center>25</center></td>
+          <td align="right" style="white-space: wrap">
+            Lorem ipsum dolor sit amet consectetur
+            Lorem ipsum dolor sit 
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
