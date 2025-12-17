@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        div{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+       span{
+        color: red;
+       }
+    </style>
+    </head>
+    <body>
+        <form onsubmit=" validationSubmit(event)" action="page2.html">
+
+            <input type="text" name="firstName" onblur="inputValidation()"
+                oninput=char()>
+
+            <!-- <input type="text" name="firstName" onchange="inputvalidation()"> -->
+            <span id="validateError"></span>
+            <input type="submit">
+        </form>
+        <!-- <button onclick="test1()">Test 1 (no event passed)</button> -->
+        <button onclick="test2(event)">Test 2 (event passed)</button>
+        <!-- <button onclick="test()">clear interval</button> -->
+        <!-- <div>hello</div> -->
+        <script src="script.js"></script>
+    </body>
+</html>

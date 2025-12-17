@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        thanks for your registration
+        <div></div>
+
+        <script>
+        var div = document.querySelector("div")
+        // var url = window.location.search.split("&");
+        var url = window.location.search.slice(1).split("&")[0].split("=")[1];
+        console.log(url);
+            div.textContent = url;
+    </script>
+    </body>
+</html>

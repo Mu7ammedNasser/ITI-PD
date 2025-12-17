@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  text-align: center;
+  color: white;
+  margin: 20px 0px;
+  width: 80%;
+  background-color: #002355e1;
+  padding: 15px;
+  box-shadow: 0 0 10px #7e8ae3;
+  border-radius: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #1e3d6931;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.input-container .label {
+  margin: 0px 0px 5px 5px;
+  font-weight: bold;
+  color: #1e3d69;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+.input-container input:focus {
+  outline: 3px solid #1e3d696c;
+}
+
+.btn {
+  color: white;
+  background-color: #1e3d69;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: white;
+  color: #1e3d69;
+}
+
+.userName,
+.userAge,
+.userEmail {
+  visibility: hidden;
+}
+.alert {
+  visibility: visible;
+  margin: 2px 0px 3px 5px;
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px 15px;
+  border: 1px solid #1e3d69;
+}
+th {
+  background-color: #1e3d69;
+  color: white;
+}
+
+td {
+  background-color: #ffffffab;
+}
+
+thead {
+  border-radius: 15px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.data {
+  overflow: hidden;
+  border-radius: 15px;
+  /* background-color: red; */
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  max-height: 200px;
+  overflow-y: auto;
+
+  
+}
+
+/*to enhance scroll view*/
+  .data::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .data::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .data::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  .data::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

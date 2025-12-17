@@ -1,0 +1,47 @@
+<!-- 1. Photo gallery with Next, Previous and Slideshow.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="nav">
+        <h1>Photo Gallery</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          repellat.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="slides-container">
+        <div class="prev slides-container-left">
+          <i class="fa-solid fa-chevron-left fa-2x"></i>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <img class="slide-content" src="./assets/1.jpg" alt="slide1" />
+          </div>
+        </div>
+        <div class="next slides-container-right">
+          <i class="fa-solid fa-chevron-right fa-2x"></i>
+        </div>
+      </div>
+      <div class="controls">
+        <i class="stop fa-solid fa-stop fa-2x"></i>
+        <i class="slide-show fa-solid fa-play fa-2x"></i>
+      </div>
+    </div>
+    <script src="./actions/actions.js"></script>
+  </body>
+</html>
