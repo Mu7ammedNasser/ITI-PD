@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 3. Implement the functionality of audio controls and make your 
+    own media player using HTML5, CSS3, and JavaScript. -->
+
+    <!-- <audio id="audio" src="./mario.mp3" autoplay controls>
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <audio id="audio" src="./audios/road-of-deception.mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="player">
+      <div class="cover"></div>
+
+      <div class="ctrls">
+        <div class="range">
+          <input
+            type="range"
+            id="progress"
+            value="0"
+            min="0"
+            max="100"
+            step="0.01"
+          />
+        </div>
+
+        <div class="buttons">
+          <div class="pause-forward-back">
+            <i
+              id="prev"
+              class="fa-solid fa-backward-step dark"
+              id="backward"
+            ></i>
+            <i id="play" class="fa-solid fa-play" id="play"></i>
+            <i id="next" class="fa-solid fa-forward-step" id="forward"></i>
+          </div>
+          <div class="volume">
+            <i class="fa-solid fa-volume-high"></i>
+            <input
+              type="range"
+              id="volume"
+              value="50"
+              min="0"
+              max="100"
+              step="1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./actions.js"></script>
+  </body>
+</html>

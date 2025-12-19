@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.player {
+  background-color: black;
+  max-width: 600px;
+  margin: 50px auto;
+
+  height: 400px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.cover {
+  background-image: url("./mario.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+}
+.ctrls {
+  height: 23%;
+  color: white;
+  padding: 10px;
+}
+
+.ctrls .range input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.ctrls .buttons {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+.ctrls .buttons .pause-forward-back {
+  display: flex;
+  gap: 20px;
+}
+.ctrls .buttons .pause-forward-back i {
+  font-size: 30px;
+}
+i {
+  cursor: pointer;
+}
+
+.dark {
+  color: rgb(73, 73, 73);
+  cursor: not-allowed;
+}
