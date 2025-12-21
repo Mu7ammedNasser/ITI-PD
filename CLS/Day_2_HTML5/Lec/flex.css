@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+nav {
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  /* display: none; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+svg{
+    width: 30px;
+    cursor: pointer;
+  display: none;
+
+}
+
+
+button{
+    background-color: lightseagreen;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #12807b;
+    
+}
+
+
+.hero-section{
+    height: 500px;
+    background-image: url("/assets/spiderman.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.container{
+    padding: 24px;
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.box{
+    width: 300px;
+    height: 350px;
+    background-color: red;
+}
