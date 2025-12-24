@@ -17,16 +17,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="navbar px-lg-5 justify-between bg-base-100 shadow-sm">
+    <nav class="navbar fixed bg-white px-30 justify-between shadow-sm">
       <div class="navbar-start">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a class="text-2xl font-bold text-violet-600">Portfolio</a>
       </div>
       <div class="navbar-end justify-end hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
-          <li><a>Item 3</a></li>
-          <li><a>Item 1</a></li>
-          <li><a>Item 3</a></li>
+        <ul class="menu menu-horizontal">
+          <li class="p-3 font-bold">Home</li>
+          <li class="p-3 font-bold">About</li>
+          <li class="p-3 font-bold">Projects</li>
+          <li class="p-3 font-bold">Contact</li>
         </ul>
       </div>
       <div class="navbar-end lg:hidden">
@@ -51,13 +51,26 @@
             tabindex="-1"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow absolute right-0"
           >
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+            <li class="font-bold">Home</li>
+            <li class="font-bold">About</li>
+            <li class="font-bold">Projects</li>
+            <li class="font-bold">Contact</li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
+    <div class="landing h-screen bg-violet-600 grid grid-cols-1 lg:grid-cols-5 items-center p-10 lg:p-20 text-white">
+        <div class="landing-info col-span-2">
+            <h1 class="text-5xl font-bold mb-5">Build Modern UI Experiences</h1>
+            <p class="text-lg mb-5">Creating modern UI experiences with cutting-edge technologies.</p>
+            <button class="bg-violet-600 text-white px-6 py-3 rounded-lg border-solid border-white border hover:bg-white hover:text-violet-600 transition-all">Get Started</button>
+            <button class="bg-white text-violet-600 px-6 py-3 rounded-lg border-solid border-white border hover:bg-violet-700 hover:text-white transition-all ml-3">Contact Me</button>
+        </div>
+        <div class="landing-image col-span-3 flex justify-center">
+            <img src="./landing.jpeg" alt="Modern UI Illustration" class="rounded-lg shadow-lg"/>
+        </div>
+    </div>
     
   </body>
 </html>
