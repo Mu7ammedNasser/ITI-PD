@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.landing {
+    background-image: url('../assets/spiderman.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px);
+}
+
