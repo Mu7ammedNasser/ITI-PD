@@ -73,12 +73,14 @@
               <i class="fa-solid text-red-500 fa-circle-info"></i>
               <a href="#" class="block text-heading rounded">About</a>
             </li>
-           
+
             <li
               class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
             >
               <i class="fa-solid text-red-500 fa-phone"></i>
-              <a href="./contact.html" class="block text-black rounded">Contact</a>
+              <a href="./contact.html" class="block text-black rounded"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -115,10 +117,44 @@
         opportunity to connect.
       </p>
     </section>
-    <footer class="bg-red-500 p-5 fixed bottom-0 w-full">
-      <p class="text-center text-lg text-white">
-        &copy; 2025 TastyBite. All rights reserved.
-      </p>
+    <footer class="bg-red border-t border-gray-200 py-12 px-4 fixed bottom-0 w-full" >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Brand -->
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">TastyBite</h3>
+          <p class="text-gray-500 text-sm">
+            Experience the finest Italian food with authentic flavors and fresh
+            ingredients.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+            <li><a href="#" class="hover:text-red-500">Menu</a></li>
+            <li><a href="./about.html" class="hover:text-red-500">About</a></li>
+            <li>
+              <a href="./contact.html" class="hover:text-red-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="font-semibold text-gray-900 mb-3">Follow Us</h4>
+          <div class="flex gap-4">
+            <a href="#" class="text-gray-500 hover:text-red-500">Facebook</a>
+            <a href="#" class="text-gray-500 hover:text-red-500">Instagram</a>
+            <a href="#" class="text-gray-500 hover:text-red-500">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-sm text-gray-400 mt-10">
+        © 2024 Gustoso Restaurant. All rights reserved.
+      </div>
     </footer>
 
     <!-- Include Navbar
@@ -130,7 +166,6 @@
           document.getElementById("navbar-placeholder").innerHTML = data;
         });
     </script> -->
-        <script src="https://unpkg.com/flowbite/dist/flowbite.js"></script>
-
+    <script src="https://unpkg.com/flowbite/dist/flowbite.js"></script>
   </body>
 </html>
