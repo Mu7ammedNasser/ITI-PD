@@ -16,7 +16,7 @@
       }
     </style>
   </head>
-  <body class="scroll-smooth" >
+  <body class="scroll-smooth">
     <nav
       class="bg-neutral-primary fixed w-full z-10 bg-white top-0 start-0 border-b border-default"
     >
@@ -52,7 +52,10 @@
               class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
             >
               <i class="fa-solid text-red-500 fa-house"></i>
-              <a href="./index.html" class="block text-black rounded" aria-current="page"
+              <a
+                href="./index.html"
+                class="block text-black rounded"
+                aria-current="page"
                 >Home</a
               >
             </li>
@@ -68,19 +71,18 @@
               class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
             >
               <i class="fa-solid text-red-500 fa-circle-info"></i>
-              <a href="./about.html" class="block text-heading rounded">About</a>
+              <a href="./about.html" class="block text-heading rounded"
+                >About</a
+              >
             </li>
-            <li
-              class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
-            >
-              <i class="fa-solid text-red-500 fa-question"></i>
-              <a href="#why-us" class="block text-heading rounded">whyus</a>
-            </li>
+            
             <li
               class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
             >
               <i class="fa-solid text-red-500 fa-phone"></i>
-              <a href="./contact.html" class="block text-black rounded">Contact</a>
+              <a href="./contact.html" class="block text-black rounded"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -130,7 +132,19 @@
         >
           Order Now
         </button>
+        <button
+          class="absolute bottom-0 text-white px-6 py-3  "
+        >
+            <a href="#why-us" class="block text-heading rounded flex flex-col items-center">
+            <span>Why Us</span>
+            <i class="fa-solid fa-arrow-down mt-2 animate-bounce"></i>
+            </a>
+
+        </button>
+        
+            
       </div>
+
     </section>
     <!-- hero Section  -->
 
@@ -181,6 +195,7 @@
     </section>
 
     <footer class="bg-red-500 p-5">
+      
       <p class="text-center text-lg text-white">
         &copy; 2025 TastyBite. All rights reserved.
       </p>
