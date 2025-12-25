@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Title</title>
+    <!-- Include Tailwind CSS -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="bg-neutral-primary fixed w-full z-10 bg-white top-0 start-0 border-b border-default"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex justify-center items-center gap-1">
+          <i
+            class="fa-solid fa-utensils bg-red-100 text-red-500 p-2 rounded-md"
+          ></i>
+          <span
+            class="self-center text-xl text-heading font-semibold whitespace-nowrap"
+            >TastyBite</span
+          >
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center w-10 h-10 justify-center text-lg text-red-500 rounded-base md:hidden hover:text-heading focus:outline-none"
+          onfocus="this.style.boxShadow='0 0 5px 0px #EF4444'"
+          onblur="this.style.boxShadow='none'"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-burger"></i>
+        </button>
+        <div class="mb-2 hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+          >
+            <li
+              class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
+            >
+              <i class="fa-solid text-red-500 fa-house"></i>
+              <a
+                href="./index.html"
+                class="block text-black rounded"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+
+            <li
+              class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
+            >
+              <i class="fa-solid text-red-500 fa-utensils"></i>
+              <a href="#" class="block text-heading rounded">Menu</a>
+            </li>
+
+            <li
+              class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
+            >
+              <i class="fa-solid text-red-500 fa-circle-info"></i>
+              <a href="./about.html" class="block text-heading rounded"
+                >About</a
+              >
+            </li>
+
+            <li
+              class="flex items-center rounded gap-1 p-2 hover:bg-red-100 transition-all hover:ms-1 hover:md:ms-0"
+            >
+              <i class="fa-solid text-red-500 fa-phone"></i>
+              <a href="./contact.html" class="block text-black rounded"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center gap-1">
+          <button
+            class="bg-transparent outline-none border p-1 rounded text-red-500 border7red-500 hover:bg-red-300 hover:text-white transition-all"
+          >
+            Login
+          </button>
+          <button
+            class="bg-red-500 text-white p-1 rounded hover:bg-red-600 transation-all"
+          >
+            SignUp
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <form class="w-full px-5 md:w-1/2  mx-auto mt-32">
+      <div class="relative z-0 w-full mb-5 group">
+      <input
+        type="text"
+        name="floating_name"
+        id="floating_name"
+        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default focus:outline-none focus:ring-0 focus:border-red-500 peer"
+        placeholder=" "
+        required
+      />
+      <label
+        for="floating_name"
+        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Full Name</label
+      >
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+      <input
+        type="email"
+        name="floating_email"
+        id="floating_email"
+        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default focus:outline-none focus:ring-0 focus:border-red-500 peer"
+        placeholder=" "
+        required
+      />
+      <label
+        for="floating_email"
+        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Email address</label
+      >
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+        type="number"
+        name="floating_phone"
+        id="floating_phone"
+        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default focus:outline-none focus:ring-0 focus:border-red-500 peer"
+        placeholder=" "
+        required
+        />
+        <label
+        for="floating_phone"
+        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >Phone number</label
+        >
+      </div>
+      
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <textarea
+          name="floating_message"
+          id="floating_message"
+          class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default focus:outline-none focus:ring-0 focus:border-red-500 peer"
+          placeholder=" "
+          required
+        ></textarea>
+        <label
+          for="floating_message"
+          class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+        >
+          Your Message
+        </label>
+      </div>
+
+      <button
+      type="submit"
+      class="text-white rounded-lg bg-red-500 box-border border border-transparent hover:bg-red-600 focus:ring-4 focus:ring-red-300 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+      >
+      Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+      </button>
+    </form>
+
+    <!-- Include Navbar
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch("./components/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script> -->
+
+    <footer class="bg-red-500 p-5 fixed bottom-0 w-full">
+      <p class="text-center text-lg text-white">
+        &copy; 2025 TastyBite. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
