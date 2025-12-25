@@ -16,3 +16,13 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
