@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Adventure for Kids</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f8ff;
+        text-align: center;
+      }
+      h1 {
+        color: #4b0082;
+        transition: all 0.5s ease;
+      }
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: transform 0.2s;
+      }
+      button:hover {
+        transform: scale(1.05);
+      }
+      .color-box {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        background-color: #ff6b6b;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        transition: all 0.5s ease;
+      }
+      .secret-message {
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #ffe066;
+        border-radius: 10px;
+        display: none;
+      }
+      .counter {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4b0082;
+        margin: 20px;
+      }
+      .rainbow {
+        animation: rainbow 2s infinite;
+      }
+      @keyframes rainbow {
+        0% {
+          background-color: red;
+        }
+        20% {
+          background-color: orange;
+        }
+        40% {
+          background-color: yellow;
+        }
+        60% {
+          background-color: green;
+        }
+        80% {
+          background-color: blue;
+        }
+        100% {
+          background-color: purple;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="main-heading">My jQuery Adventure</h1>
+
+      <div>
+        <button id="btn-blue">Make Heading Blue</button>
+        <button id="btn-red">Make Heading Red</button>
+        <button id="btn-green">Make Heading Green</button>
+      </div>
+
+      <div class="color-box" id="magic-box">
+        Click the button to make me magical!
+      </div>
+      <button id="btn-magic">Toggle Magic Effect</button>
+
+      <button id="btn-secret">Show/Hide Secret Message</button>
+      <div class="secret-message" id="secret-message">
+        🎉 Congratulations! You're learning jQuery! 🎉
+      </div>
+
+      <div class="counter">Counter: <span id="counter-value">0</span></div>
+      <button id="btn-counter">Click to Increase Counter</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
