@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder Data Loader</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background: #4e73df;
+            background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .controls {
+            padding: 20px;
+            background: #f8f9fc;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            border-bottom: 1px solid #e3e6f0;
+        }
+        .btn {
+            padding: 12px 20px;
+            background: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn:hover {
+            background: #2e59d9;
+            transform: translateY(-2px);
+        }
+        .btn i {
+            font-size: 1rem;
+        }
+        .content {
+            padding: 20px;
+        }
+        .result-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .result-count {
+            font-weight: bold;
+            color: #4e73df;
+        }
+        .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .post-card {
+            border: 1px solid #e3e6f0;
+            border-radius: 8px;
+            padding: 15px;
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .post-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .post-title {
+            font-weight: bold;
+            color: #4e73df;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .post-body {
+            color: #5a5c69;
+            margin-bottom: 15px;
+        }
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #858796;
+            font-size: 0.9rem;
+            border-top: 1px solid #e3e6f0;
+            padding-top: 10px;
+        }
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(78, 115, 223, 0.3);
+            border-radius: 50%;
+            border-top-color: #4e73df;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #858796;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #5a5c69;
+            font-size: 0.9rem;
+            border-top: 1px solid #e3e6f0;
+        }
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JSONPlaceholder Data Loader</h1>
+            <p class="subtitle">Load sample data from JSONPlaceholder API</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn" id="load-all">
+                <i class="fas fa-download"></i> Load All Posts
+            </button>
+            <button class="btn" id="load-user1">
+                <i class="fas fa-user"></i> Load User 1 Posts
+            </button>
+            <button class="btn" id="load-user2">
+                <i class="fas fa-users"></i> Load User 2 Posts
+            </button>
+        </div>
+
+        <div class="content">
+            <div class="result-info">
+                <h2>Loaded Posts</h2>
+                <div class="result-count">Showing: <span id="post-count">0</span> posts</div>
+            </div>
+            
+            <div class="posts-container" id="posts-container">
+                <div class="no-data">No posts loaded yet. Click a button above to load data.</div>
+            </div>
+        </div>
+
+   
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>

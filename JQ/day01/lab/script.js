@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   $("#btn-secret").click(function () {
-    $("#secret-message").fadeToggle();
+    $("#secret-message").slideToggle();
   });
 
   var counter = 0;
