@@ -1,0 +1,16 @@
+# Node / Tailwind
+node_modules/
+package-lock.json
+
+# Generated Tailwind CSS
+output.css
+dist/
+build/
+
+# OS / editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
