@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+
+  <style>
+    .gender-img {
+      width: 150px;
+      cursor: pointer;
+      border: 3px solid transparent;
+    }
+
+    .selected {
+      border-color: green;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Register</h2>
+
+<input type="text" id="name" placeholder="Enter your name"><br><br>
+
+<h3>Select your Gender</h3>
+
+<img src="male.png" id="male" class="gender-img" onclick="selectGender('male')">
+<img src="female.png" id="female" class="gender-img" onclick="selectGender('female')">
+
+<br><br>
+
+<select id="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>
+
+<br><br>
+
+<button onclick="register()">Register</button>
+
+<script src="cookieLib.js"></script>
+<script src="register.js"></script>
+
+</body>
+</html>
