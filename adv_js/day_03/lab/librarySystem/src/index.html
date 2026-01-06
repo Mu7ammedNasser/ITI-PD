@@ -1,15 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body>
-    
-    
-    
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#708993] overflow-hidden">
+    <!-- start input for number of books  -->
+    <div id="initBook" class=" h-screen flex justify-center items-center">
+      <div class="w-1/2 h-1/2 p-8 text-center flex flex-col rounded-lg">
+        <div
+          class="rounded-lg flex items-center h-screen justify-center flex-col overflow-hidden"
+        >
+          <h1 class="text-[#E7F2EF] text-3xl">How Many Books</h1>
+          <div class="flex items-center gap-2 w-full h-full">
+            <input
+              type="number"
+              id="NumberOfBook"
+              class="w-[80%] p-2 rounded-lg outline-none"
+              placeholder="Number of Books"
+            />
+            <button
+              id="num-of-book-btn"
+              class="bg-[#19183B] text-white rounded-lg w-[80px] h-[40px]"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end input for number of books  -->
+
+    <div id="book1" class="absolute bottom-0 right-0">
+      <img class="w-[200px]" src="../assets/download.png" alt="books" />
+    </div>
+    <div id="book2" class="absolute top-0 left-0">
+      <img class="w-[200px]" src="../assets/download2.png" alt="books" />
+    </div>
+
+    <div id="bookForm" class="hidden h-screen flex justify-center items-center">
+      <div class="w-1/2 p-8 text-center flex flex-col rounded-lg">
+        <div
+          class="rounded-lg flex items-center h-screen justify-center flex-col"
+        >
+          <h1 class="text-[#E7F2EF] text-3xl mb-3">Book Details</h1>
+
+          <div class="flex flex-col items-center gap-4 w-full">
+            <label class="w-full flex flex-col items-center gap-1">
+              <span class="text-[#19183B] ms-2 block text-start w-[80%]"
+                >Book Name</span
+              >
+              <input
+                type="text"
+                id="bookName"
+                class="text-[#19183B] w-[80%] p-2 rounded-lg outline-none"
+                placeholder="Enter book name"
+              />
+            </label>
+
+            <label class="w-full flex flex-col items-center gap-1">
+              <span class="text-[#19183B] ms-2 block text-start w-[80%]"
+                >Price</span
+              >
+              <input
+                type="number"
+                id="price"
+                class="text-[#19183B] w-[80%] p-2 rounded-lg outline-none"
+                placeholder="Enter price"
+              />
+            </label>
+
+            <label class="w-full flex flex-col items-center gap-1">
+              <span class="text-[#19183B] ms-2 block text-start w-[80%]"
+                >Author Name</span
+              >
+              <input
+                type="text"
+                id="authorName"
+                class="text-[#19183B] w-[80%] p-2 rounded-lg outline-none"
+                placeholder="Enter author name"
+              />
+            </label>
+
+            <label class="w-full flex flex-col items-center gap-1">
+              <span class="text-[#19183B] ms-2 block text-start w-[80%]"
+                >Author Email</span
+              >
+              <input
+                type="email"
+                id="authorEmail"
+                class="text-[#19183B] w-[80%] p-2 rounded-lg outline-none"
+                placeholder="Enter author email"
+              />
+            </label>
+
+            <button
+              id="submitBook"
+              class="bg-[#19183B] text-white rounded-lg w-[80px] h-[40px] hover:bg-[#2a2960]"
+            >
+              Add Book
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bookCrud" class="hidden h-screen flex justify-center items-center bg-[#19183B]">
+      <div class="w-2/3 p-8 text-center flex flex-col rounded-lg bg-[#19183B]">
+        <div class="rounded-lg flex h-screen justify-center flex-col">
+          <h1 class="text-[#E7F2EF] text-3xl mb-3">Book Details</h1>
+
+          <table
+            class="w-full border rounded-lg overflow-hidden border-[#2f2e5f] text-center text-[#E7F2EF]"
+          >
+            <thead class="bg-[#23225a]">
+              <tr>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">Name</th>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">
+                  Publish Date
+                </th>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">Price</th>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">
+                  Author Name
+                </th>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">
+                  Author E-Mail
+                </th>
+                <th scope="col" class="p-2 border border-[#2f2e5f]">
+                  Controls
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="tableBody">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/indexScript.js"></script>
-</body>
+  </body>
 </html>
